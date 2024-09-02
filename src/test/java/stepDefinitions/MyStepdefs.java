@@ -16,6 +16,7 @@ import resources.Utils;
 import resources.testDataBuild;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,9 +29,10 @@ public class MyStepdefs extends Utils {
     Response response;
     testDataBuild TDB = new testDataBuild();
 
-    @Given("Add place payload")
-    public void add_Place_Payload() throws FileNotFoundException {
-        req= given().spec(requestSpecificationMethod()).body(TDB.addPlacePayload());
+    @Given("Add place payload {string} {string} {string} {string} {string}")
+    public void add_place_payload(String Address, String Language, String Name, String Phone_number, String Website) throws IOException {
+        // Write code here that turns the phrase above into concrete actions
+        req= given().spec(requestSpecificationMethod()).body(TDB.addPlacePayload(Address,Language,Name,Phone_number,Website));
     }
 
     @When("User calls {string} API with POST HTTP request")

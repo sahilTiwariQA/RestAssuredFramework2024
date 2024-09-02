@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class testDataBuild {
-    public AddPlace_Serialization addPlacePayload()
+    public AddPlace_Serialization addPlacePayload( String Address, String Language, String Name, String Phone_number, String Website)
     {
         AddPlace_Serialization ap=new AddPlace_Serialization();//created object of serialized class of getters and setters
         Location_Serialization loc = new Location_Serialization();
@@ -16,11 +16,11 @@ public class testDataBuild {
         ap.setLocation(loc); //Set location accepts nested JSON values, so created nested object of the class above and passed that object in this json as a value
 
         ap.setAccuracy(500);
-        ap.setAddress("Kalyan Kolsewadis");
-        ap.setLanguage("English");
-        ap.setName("Ghatotkacch2");
-        ap.setPhone_number("+91 123456789");
-        ap.setWebsite("www.google.com");
+        ap.setAddress(Address);
+        ap.setLanguage(Language);
+        ap.setName(Name);
+        ap.setPhone_number(Phone_number);
+        ap.setWebsite(Website);
 
         List<String> myListTypes = new ArrayList<>();
         myListTypes.add("shoe park");
@@ -28,6 +28,5 @@ public class testDataBuild {
         myListTypes.add("Third item");
         ap.setTypes(myListTypes);
         return ap;
-
     }
 }

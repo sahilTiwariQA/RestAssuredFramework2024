@@ -16,9 +16,9 @@ Body:
         "lng": 10.101011
     },
     "accuracy": 500,
-    "name": "Ghatotkacch2",
+    "name": "Ghatotkac",
     "phone_number": "+91 123456789",
-    "address": "Kalyan Kolsewadis",
+    "address": "Kalyan",
     "types": [
         "shoe park",
         "shop",
@@ -28,7 +28,7 @@ Body:
     "language": "English"
 }
 HTTP/1.1 200 OK
-Date: Thu, 29 Aug 2024 18:15:43 GMT
+Date: Mon, 02 Sep 2024 16:43:01 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -41,8 +41,8 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "fb1234d78b0706d5fc835ef6f0a3d49e",
+    "place_id": "89a20d91f6eeaf655b8818a29cbd3a83",
     "scope": "APP",
-    "reference": "a55e0408648c7f97d5ec109270bf9723a55e0408648c7f97d5ec109270bf9723",
-    "id": "a55e0408648c7f97d5ec109270bf9723"
+    "reference": "0ccb13abb02ceaf293beacb1aba50fcd0ccb13abb02ceaf293beacb1aba50fcd",
+    "id": "0ccb13abb02ceaf293beacb1aba50fcd"
 }
