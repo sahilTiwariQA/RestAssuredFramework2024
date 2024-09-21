@@ -16,19 +16,19 @@ Body:
         "lng": 10.101011
     },
     "accuracy": 500,
-    "name": "Ghatotkac",
-    "phone_number": "+91 123456789",
-    "address": "Kalyan",
+    "name": "Chan",
+    "phone_number": "5665556677",
+    "address": "1 Chi St",
     "types": [
         "shoe park",
         "shop",
         "Third item"
     ],
-    "website": "www.google.com",
-    "language": "English"
+    "website": "www.kl.chi",
+    "language": "Chinese"
 }
 HTTP/1.1 200 OK
-Date: Mon, 02 Sep 2024 16:43:01 GMT
+Date: Sat, 21 Sep 2024 19:46:06 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -41,8 +41,76 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "89a20d91f6eeaf655b8818a29cbd3a83",
+    "place_id": "0257b6be1793b77c0a117e9bb82dd698",
     "scope": "APP",
-    "reference": "0ccb13abb02ceaf293beacb1aba50fcd0ccb13abb02ceaf293beacb1aba50fcd",
-    "id": "0ccb13abb02ceaf293beacb1aba50fcd"
+    "reference": "f69171885a6594af612a45e43b12ebdcf69171885a6594af612a45e43b12ebdc",
+    "id": "f69171885a6594af612a45e43b12ebdc"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0257b6be1793b77c0a117e9bb82dd698
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=0257b6be1793b77c0a117e9bb82dd698
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sat, 21 Sep 2024 19:46:06 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 221
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "12.121211",
+        "longitude": "10.101011"
+    },
+    "accuracy": "500",
+    "name": "Chan",
+    "phone_number": "5665556677",
+    "address": "1 Chi St",
+    "types": "shoe park,shop,Third item",
+    "website": "www.kl.chi",
+    "language": "Chinese"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "0257b6be1793b77c0a117e9bb82dd698"
+}
+HTTP/1.1 200 OK
+Date: Sat, 21 Sep 2024 19:46:07 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
 }

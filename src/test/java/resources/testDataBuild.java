@@ -29,4 +29,10 @@ public class testDataBuild {
         ap.setTypes(myListTypes);
         return ap;
     }
+
+    public String deletePlaceAPI(String delPlaceId)
+    {
+//        return "\"{\"place_id\":\""+delPlaceId+"\"}";
+        return "{\n    \"place_id\": \""+delPlaceId+"\"\n}";
+    }
 }
