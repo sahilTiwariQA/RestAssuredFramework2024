@@ -30,7 +30,7 @@ public class Utils {
     //creating a method to fetch global.properties values
     public static String getGlobalProps(String key) throws IOException {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("/Users/sahiltiwari/IdeaProjects/RestAssuredFramework2024/src/test/java/resources/global.properties");
+        FileInputStream fis = new FileInputStream("src/test/java/resources/global.properties");
         prop.load(fis);
         return prop.getProperty(key);
     }
